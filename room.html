@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ROOM</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/scriptimages.js"></script>
+        <script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/slideshow.js" type="text/javascript" charset="utf-8"></script>
+    </head>
+
+    <body>
+
+        <nav>
+            <div class="logo">
+            
+                <a href="#"><img src="images/logo.svg" alt=""></a>
+            </div>
+            <input type="checkbox" id="menu-checkbox" class="menu-checkbox">
+            <label class="hamburger" for="menu-checkbox" class="menu-toggle"><img  src="images/icon-hamburger.svg" alt=""></label>
+            <label class="close" for="menu-checkbox" class="menu-toggle"><img  src="images/icon-close.svg" alt=""></label>
+            
+            <ul class="menu">
+                <li><a class="item" href="#">home</a><div class="line"></div></li>
+                <li><a class="item" href="#">shop</a><div class="line"></div></li>
+                <li><a class="item" href="#">about</a><div class="line"></div></li>
+                <li><a class="item" href="#">contact</a><div class="line"></div></li>
+             </ul>
+        </nav>
+            
+            <section id="section-1">
+                <div class="image">
+                    <img class="pict" id="slide" src="images/desktop-image-hero-1.jpg" alt="">
+                    <img class="pict-mobile" id="slideMobile" src="images/mobile-image-hero-1.jpg" alt="">
+                    <div class="command">
+                        <button id="left" class="previous" onclick="ChangeSlide(-1)"><img src="images/icon-angle-left.svg" alt=""></button>
+                        <button id="right" class="next" onclick="ChangeSlide(1)"><img src="images/icon-angle-right.svg" alt=""></button>
+                    </div>
+                    <div class="command-mobile">
+                        <button class="previous" onclick="ChangeSlideMobile(-1)"><img src="images/icon-angle-left.svg" alt=""></button>
+                        <button class="next" onclick="ChangeSlideMobile(1)"><img src="images/icon-angle-right.svg" alt=""></button>
+                    </div>
+                </div>
+                <div class="description" id="gallery">
+                    <div class="slides">
+                            <div class="slide" >
+                                <h1 class="title">Discover innovative ways to decorate</h1>
+                                <p class="text">We provide unmatched quality, confort, and style for property owners accross the country.
+                                Out experts combine form and function in bringing your vision to life.
+                                Create a room in your awnstyle with our collection and make your property a reflection of you and what you love.</p>
+                                <a href="#">SHOP NOW <img src="images/icon-arrow.svg" alt=""></a>
+                            </div>
+                            <div class="slide">
+                                <h1 class="title">Discover innovative ways </h1>
+                                <p class="text">We provide unmatched quality, confort, and style for property owners accross the country.
+                                Out experts combine form and function in bringing your vision to life.
+                                Create a room in your awnstyle with our collection and make your property a reflection of you and what you love.</p>
+                                <a href="#">SHOP NOW <img src="images/icon-arrow.svg" alt=""></a>
+                            </div>
+                            <div class="slide">
+                                <h1 class="title">Discover </h1>
+                                <p class="text">We provide unmatched quality, confort, and style for property owners accross the country.
+                                Out experts combine form and function in bringing your vision to life.
+                                Create a room in your awnstyle with our collection and make your property a reflection of you and what you love.</p>
+                                <a href="#">SHOP NOW <img src="images/icon-arrow.svg" alt=""></a>
+                            </div>
+                    </div>        
+                </div>
+                    
+                <div class="description-mobile" id="gallery-mobile">
+                        <div class="slides-mobile">
+                                <div class="slide-mobile" >
+                                    <h1 class="title">Discover innovative ways to decorate</h1>
+                                    <p class="text">We provide unmatched quality, confort, and style for property owners accross the country.
+                                    Out experts combine form and function in bringing your vision to life.
+                                    Create a room in your awnstyle with our collection and make your property a reflection of you and what you love.</p>
+                                    <a href="#">SHOP NOW <img src="images/icon-arrow.svg" alt=""></a>
+                                </div>
+                                <div class="slide-mobile">
+                                    <h1 class="title">Discover innovative ways </h1>
+                                    <p class="text">We provide unmatched quality, confort, and style for property owners accross the country.
+                                    Out experts combine form and function in bringing your vision to life.
+                                    Create a room in your awnstyle with our collection and make your property a reflection of you and what you love.</p>
+                                    <a href="#">SHOP NOW <img src="images/icon-arrow.svg" alt=""></a>
+                                </div>
+                                <div class="slide-mobile">
+                                    <h1 class="title">Discover </h1>
+                                    <p class="text">We provide unmatched quality, confort, and style for property owners accross the country.
+                                    Out experts combine form and function in bringing your vision to life.
+                                    Create a room in your awnstyle with our collection and make your property a reflection of you and what you love.</p>
+                                    <a href="#">SHOP NOW <img src="images/icon-arrow.svg" alt=""></a>
+                                </div>
+                        </div>        
+                    </div>   
+
+                        
+
+
+            </section>
+            <section id="section-2">
+                <div class="left"><img src="images/image-about-dark.jpg" alt=""></div>
+                <div class="center">
+                    <h6>ABOUT OUR FURNITURE</h6>
+                    <p>Our multifontionnal collection blends design and function to suit your individual taste.
+                        Make each room unique.
+                        Or pick a cohesiv theme that best express your interests and what inspires you.
+                        Find the furnitures pieces you need.
+                        From traditional to contemporary styles or anything in between.
+                        Product specialists are available to help you create your dream space.
+                    </p>
+                </div>
+                <div class="right"><img  src="images/image-about-light.jpg" alt=""></div>
+            </section>
+    </body>
+</html>
